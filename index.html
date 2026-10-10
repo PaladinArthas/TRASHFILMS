@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRASH FILMS ROULETTE</title>
-    <link rel="stylesheet" href="TRASHCINEMAROULETTE.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">      
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TRASH FILMS ROULETTE</title>
+      <link rel="stylesheet" href="TRASHCINEMAROULETTE.css" />
   </head>
   <body>
-      <section class = "navigation">
+      
+    <section class = "navigation">
          <button onclick="" class="btn">
           Главная страница
         </button>
@@ -15,13 +22,46 @@
           Категории
         </button>
       </section>  
+      
       <section class="header">
-        <img src="PngFiles/headericon.png">
+        <img src="PngFiles/headericon.png" >
       </section>
+      
+      <section class="Ludka">
+        <button class="btn">
+          Крутить
+        </button>
+      </section>
+
       <section class="logo">
         <img src="PngFiles/Logo.png" alt="">
       </section>
 
+      <section class="parentSection">
+        <section class="category_of_trash">
+          1. ВЫБЕРИТЕ КАТЕГОРИЮ ТРЕША
+          <section class="category_of_trashBlock">
+            
+            <div class="text"><button class="btn1">.</button>Инопланетяне из картона</div>
+            <div class="text"><button class="btn1">.</button>Ужасы 80-х </div>
+            <div class="text"><button class="btn1">.</button>Акулы в космосе</div>
+            <div class="text"><button class="btn1">.</button>Провальные сиквелы</div>
+
+          </section>
+
+        <section class="leveloftrash">
+          2. УРОВЕНЬ УПОРОТОСТИ
+        </section>
+
+        <section class="slidecontainer">
+           <input type="range" id="myRange" min="1" max="10" value="50" class="slider">
+           <span id="rangeValue">50</span>
+        </section>
+
+      </section>  
+       
+
+      </section>  
   </body>
     </html>
 

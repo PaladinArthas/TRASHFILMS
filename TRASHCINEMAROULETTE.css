@@ -27,18 +27,32 @@ body{
     justify-content: space-around;
 
 }
+.Ludka{
+    display: flex;
+    justify-content: center;
+}
+@keyframes blink-animation {
+    50% { opacity: 0.3; background-color: rgba(255, 255, 0, 0); }
+}
 .btn{
-  font-size: 20px;
-  font-style: oblique;
+  font-size: 5vh;
+  color: #83FF85;
+  border: none;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
   width: 270px;
   height: 65px;
-  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 50px;
-  box-shadow: 1px 1px black;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:active{
+    animation: blink-animation 0.3s infinite;
 }
 .logo{
     height: auto;
@@ -50,4 +64,77 @@ body{
     display: block;
     width: 40%;
     height: auto;
+}
+.parentSection{
+    display: flex;
+    justify-content: center;
+}
+.category_of_trash{
+    width: 135vh;
+    height: 50vh;
+    padding: 20px;
+    color: #83FF85;
+    font-family: "Press Start 2P", system-ui;
+    border: 2px solid;
+    border-color: #BF50FF;
+    padding: 20px;  
+    border-radius: 8px;
+    
+}
+.category_of_trashBlock{
+    display: flex;
+    width: 130vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 35px;
+    font-size: 3vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+.btn1{
+    width: 10px;
+}
+.text{
+    display: flex;
+    width: 45%;
+    font-family: "Roboto", sans-serif;
+    color:#ACACAC;
+}
+.leveloftrash{
+    margin-top: 5vh;
+}
+
+.slidecontainer{
+    margin-top: 5vh; 
+    width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
 }
