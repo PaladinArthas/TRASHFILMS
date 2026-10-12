@@ -12,26 +12,28 @@
       <title>TRASH FILMS ROULETTE</title>
       <link rel="stylesheet" href="TRASHCINEMAROULETTE.css" />
   </head>
-  <body>
-      
-    <section class = "navigation">
-         <button onclick="" class="btn">
+  <section class="navigation_container">
+      <section class = "navigation">
+        <button onclick="" class="btn">
           Главная страница
         </button>
         <button onclick="" class="btn">
           Категории
         </button>
-      </section>  
-      
+      </section>
+    </section>  
       <section class="header">
-        <img src="PngFiles/headericon.png" >
+        <section class="Ludka">
+          <button class="btn_Ludka">
+            Крутить
+          </button>
+        </section>
+
       </section>
+  <body>
+    
       
-      <section class="Ludka">
-        <button class="btn">
-          Крутить
-        </button>
-      </section>
+      
 
       <section class="logo">
         <img src="PngFiles/Logo.png" alt="">
@@ -52,11 +54,26 @@
         <section class="leveloftrash">
           2. УРОВЕНЬ УПОРОТОСТИ
         </section>
-
         <section class="slidecontainer">
-           <input type="range" id="myRange" min="1" max="10" value="50" class="slider">
-           <span id="rangeValue">50</span>
+          
+          <div class="slider-box">
+        
+            <div class="slider-labels">
+              <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span>
+              <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+            </div>
+            
+            
+            <input type="range" id="myRange" min="0" max="10" value="9" class="slider">
+          </div>
+
+          <div class="slider-hints">
+            <div>[Слегка странно</div>
+            <div class="line-separator"></div>
+            <div>Полная ахинея]</div>
+          </div>
         </section>
+
 
       </section>  
        
