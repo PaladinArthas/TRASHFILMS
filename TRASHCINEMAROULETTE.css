@@ -3,12 +3,20 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 1000vh;
+    
     scroll-behavior: smooth;
-    background-image: url("PngFiles/background.png");
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
+}
+.background{
+    display: block;
+    background-image: url("PngFiles/background.png");
+    width: 100vw;
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
 .header{
     margin: 0;
@@ -99,10 +107,11 @@ body{
 .parentSection{
     display: flex;
     justify-content: center;
+   
 }
 .category_of_trash{
     width: 135vh;
-    height: 50vh;
+    height: 45vh;
     padding: 20px;
     color: #83FF85;
     font-family: "Press Start 2P", system-ui;
