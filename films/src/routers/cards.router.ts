@@ -15,7 +15,7 @@ cardsRouter.get(
   '/',
   async (request: Request<{}, {}>, response: Response<GetCardsResponse>) => {
     const cards = await getManyCards();
-    response.send(cards);
+    response.json(cards);
   },
 );
 
