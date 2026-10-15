@@ -5,6 +5,7 @@ body{
     flex-direction: column;
     
     scroll-behavior: smooth;
+    background-color: #130724;
     background-size: 100% auto;
     background-repeat: repeat-y;
     background-position: top center;
@@ -251,4 +252,34 @@ body{
     height: 70px;
     background-image: url(/PngFiles/cassette.svg);
     background-repeat: no-repeat;
+}
+
+.bg-modal {
+    display: block;
+    position: absolute;
+    z-index: 333;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: block;
+
+    z-index: 9999;
+
+    width: 800px;
+    height: 450px;
+    background-color: white;
+}
+
+.modalWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
