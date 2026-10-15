@@ -1,4 +1,79 @@
 body {
   scroll-behavior: smooth;
   background-image: url("PngFiles/libraryBackgroundIcon.png");
+  background-size: cover;
+  min-height: 2000vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_container {
+  width: 100%;
+  margin-bottom: 20vh;
+}
+.navigation {
+  display: flex;
+  border: 2px solid black;
+  background-color: #130724;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 10px rgba(131, 255, 133, 0.5);
+  margin: 7vh;
+  justify-content: space-around;
+}
+@keyframes blink-animation {
+  50% {
+    opacity: 0.3;
+    background-color: rgba(255, 255, 0, 0);
+  }
+}
+.btn {
+  font-size: 3vh;
+  color: #83ff85;
+  border: none;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:active {
+  animation: blink-animation 0.3s infinite;
+}
+a {
+  text-decoration: none;
+  color: #83ff85;
+}
+.filmcontainersection {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: wrap;
+  height: 2000vh;
+}
+.container {
+  overflow: hidden;
+  width: 50vh;
+  height: 140vh;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+.containerPhoto {
+}
+.containerPhoto img {
+  width: 100%;
+  height: 60vh;
+}
+.text {
+  font-size: 3vh;
+  color: #7df6ff;
+  border: none;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
 }
