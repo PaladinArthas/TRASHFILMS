@@ -28,27 +28,27 @@ modalBtn.addEventListener('click', () => {
     wrapper.appendChild(modalContainer);
 
     document.body.appendChild(wrapper)
+
+    const cross = document.createElement('button');
+    cross.setAttribute('type', 'button');
+    cross.className = 'modalCross'
+
+    const start = document.createElement('button');
+    cross.setAttribute('type', 'button');
+    cross.className = 'modallStart'
+
+    const play = document.createElement('button');
+    cross.setAttribute('type', 'button');
+    cross.className = 'modalPlay'
+
+    modalContainer.appendChild(cross)
+    modalContainer.appendChild(start)
+    modalContainer.appendChild(play)
+
 });
 
-const cross = document.createElement('button');
-cross.setAttribute('type', 'button');
-cross.className('modalCross')
-
-const start = document.createElement('button');
-cross.setAttribute('type', 'button');
-cross.className('mdoalStart')
-
-const play = document.createElement('button');
-cross.setAttribute('type', 'button');
-cross.className('modalPlay')
-
-modalContainer.appendChild(cross)
-modalContainer.appendChild(start)
-modalContainer.appendChild(play)
-
-
-const scrollBtn = document.querySelector('.btn_Ludka');
-const targetSection = document.querySelector('.btn-roulete')
+  const scrollBtn = document.querySelector('.btn_Ludka');
+  const targetSection = document.querySelector('.btn-roulete')
 
 scrollBtn.addEventListener('click', () => {
   targetSection.scrollIntoView({
