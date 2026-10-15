@@ -1,86 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>TRASH FILMS ROULETTE</title>
-      <link rel="stylesheet" href="TRASHCINEMAROULETTE.css" />
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRASH FILMS ROULETTE</title>
+    <link rel="stylesheet" href="TRASHCINEMAROULETTE.css" />
   </head>
   <body>
-    
     <section class="navigation_container">
-      <nav class = "navigation">
-        <button onclick="" class="btn">
-          Главная страница
-        </button>
-        <button onclick="" class="btn">
-          Категории
-        </button>
+      <nav class="navigation">
+        <button onclick="index.html" class="btn">Рулетка</button>
+        <button onclick="library.html" class="btn">Библиотека</button>
       </nav>
-    </section>  
-      <section class="header">
-        <section class="Ludka">
-          <button class="btn_Ludka">
-            Крутить
-          </button>
-        </section>
-
+    </section>
+    <section class="header">
+      <section class="Ludka">
+        <button class="btn_Ludka">Крутить</button>
       </section>
+<<<<<<< HEAD
          
   <section class="background">
+=======
+    </section>
+
+    <section class="background">
+>>>>>>> 611097ad968447345f015dc34b74b48d733c543a
       <section class="logo">
-        <img src="PngFiles/Logo.png" alt="">
+        <img src="PngFiles/Logo.png" alt="" />
       </section>
 
       <section class="parentSection">
         <section class="category_of_trash">
           1. ВЫБЕРИТЕ КАТЕГОРИЮ ТРЕША
           <section class="category_of_trashBlock">
-            
-            <div class="text"><button class="btn1">.</button>Инопланетяне из картона</div>
-            <div class="text"><button class="btn1">.</button>Ужасы 80-х </div>
-            <div class="text"><button class="btn1">.</button>Акулы в космосе</div>
-            <div class="text"><button class="btn1">.</button>Провальные сиквелы</div>
-
+            <div class="text">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider1"></span>
+              </label>
+              Инопланетяне из картона
+            </div>
+            <div class="text">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider1"></span>
+              </label>
+              Ужасы 80-х
+            </div>
+            <div class="text">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider1"></span>
+              </label>
+              Акулы в космосе
+            </div>
+            <div class="text">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider1"></span>
+              </label>
+              Провальные сиквелы
+            </div>
           </section>
 
-        <section class="leveloftrash">
-          2. УРОВЕНЬ УПОРОТОСТИ
-        </section>
-        <section class="slidecontainer">
-          
-          <div class="slider-box">
-        
-            <div class="slider-labels">
-              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+          <section class="leveloftrash">2. УРОВЕНЬ УПОРОТОСТИ</section>
+          <section class="slidecontainer">
+            <div class="slider-box">
+              <div class="slider-labels">
+                <span>1</span><span>2</span><span>3</span><span>4</span
+                ><span>5</span> <span>6</span><span>7</span><span>8</span
+                ><span>9</span><span>10</span>
+              </div>
+
+              <input
+                type="range"
+                id="myRange"
+                min="0"
+                max="10"
+                value="9"
+                class="slider"
+              />
             </div>
-            
-            
-            <input type="range" id="myRange" min="0" max="10" value="9" class="slider">
-          </div>
 
-          <div class="slider-hints">
-            <div>[Слегка странно</div>
-            <div class="line-separator"></div>
-            <div>Полная ахинея]</div>
-          </div>
+            <div class="slider-hints">
+              <div>[Слегка странно</div>
+              <div class="line-separator"></div>
+              <div>Полная ахинея]</div>
+            </div>
+          </section>
         </section>
-
-      </section>  
-
       </section>
       <div class="btn-position open-modal">
         <button type="button" class="btn-roulete btn">КРУТИТЬ</button>
       </div>
+<<<<<<< HEAD
     </div>
   </section>
   <script src="./logics.js"></script>
+=======
+    </section>
+>>>>>>> 611097ad968447345f015dc34b74b48d733c543a
   </body>
-    </html>
+</html>
